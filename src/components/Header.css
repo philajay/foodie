@@ -1,0 +1,137 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--color-primary);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.header__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.02em;
+}
+
+.header__logo {
+  font-size: 1.4rem;
+}
+
+.header__search {
+  flex: 1;
+}
+
+.header__search input {
+  width: 100%;
+  max-width: 460px;
+  padding: 0.6rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font: inherit;
+  background: #fff;
+  color: var(--color-text);
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.header__link {
+  background: none;
+  border: none;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.92;
+  padding: 0;
+}
+
+.header__link:hover,
+.header__link.is-active {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.header__cta {
+  padding: 0.45rem 0.9rem;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.header__admin {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 8px;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header__admin:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.header__cart {
+  position: relative;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.header__cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .header__inner {
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  .header__search {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .header__link {
+    font-size: 0.85rem;
+  }
+}

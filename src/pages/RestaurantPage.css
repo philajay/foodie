@@ -1,0 +1,151 @@
+.restaurant-hero {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 1.25rem;
+}
+
+.restaurant-hero__banner {
+  height: 220px;
+}
+
+.restaurant-hero__panel {
+  padding: 1.1rem 1.25rem;
+}
+
+.restaurant-hero__panel h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.6rem;
+}
+
+.restaurant-hero__panel p {
+  margin: 0 0 0.5rem;
+}
+
+.restaurant-hero__offer {
+  color: var(--color-accent);
+  font-weight: 700;
+}
+
+.menu-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.menu-toolbar input[type='search'] {
+  flex: 1;
+  min-width: 220px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  font: inherit;
+}
+
+.menu-section {
+  margin-bottom: 1.5rem;
+}
+
+.menu-section h2 {
+  margin: 0 0 0.6rem;
+  font-size: 1.15rem;
+}
+
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.menu-row {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid var(--color-surface-alt);
+}
+
+.menu-row:last-child {
+  border-bottom: none;
+}
+
+.menu-row__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu-row__title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.menu-row__rating {
+  color: #1c8a4d;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.menu-row__price {
+  margin: 0.2rem 0;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.menu-row__desc {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.88rem;
+}
+
+.menu-row__action {
+  position: relative;
+  width: 128px;
+  height: 96px;
+  flex: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.menu-row__image {
+  position: absolute;
+  inset: 0;
+  width: 128px;
+  height: 96px;
+  border-radius: 10px;
+}
+
+.menu-row__action .btn,
+.menu-row__action .stepper {
+  position: relative;
+  margin-bottom: -0.6rem;
+  background: #fff;
+}
+
+.stepper--floating {
+  box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 560px) {
+  .restaurant-hero__banner {
+    height: 150px;
+  }
+
+  .menu-row {
+    flex-direction: column;
+  }
+
+  .menu-row__action {
+    width: 100%;
+    height: 110px;
+  }
+}

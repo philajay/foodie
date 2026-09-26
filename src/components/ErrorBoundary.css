@@ -1,0 +1,46 @@
+.fatal {
+  max-width: 560px;
+  margin: 4rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(20, 22, 34, 0.12);
+  text-align: center;
+}
+
+.fatal h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.fatal p {
+  color: #6b7080;
+  font-size: 0.92rem;
+}
+
+.fatal__steps {
+  text-align: left;
+  max-width: 40ch;
+  margin: 1rem auto;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+  color: #1c1c28;
+}
+
+.fatal__steps code {
+  background: #eceef4;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+.fatal__retry {
+  border: none;
+  background: #e23744;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,71 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+dist-ssr/
+build/
+*.local
+
+# Environment & secrets — never commit real Firebase config or keys
+.env
+.env.*
+!.env.example
+serviceAccount*.json
+*-service-account*.json
+*-firebase-adminsdk-*.json
+*.pem
+*.key
+
+# Firebase CLI cache / emulator artefacts
+.firebase/
+firebase-debug.log
+firestore-debug.log
+database-debug.log
+pubsub-debug.log
+ui-debug.log
+*-debug.log
+
+# Downloaded seed photography (18 MB, regenerate with `npm run images`)
+seed-images/
+
+# Browser automation artefacts
+.playwright/
+.playwright-cli/
+test-results/
+playwright-report/
+blob-report/
+.playwright-cache/
+
+# Test / coverage output
+coverage/
+.nyc_output/
+*.lcov
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Caches
+.cache/
+.vite/
+.eslintcache
+*.tsbuildinfo
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

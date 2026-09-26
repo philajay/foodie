@@ -1,0 +1,128 @@
+.checkout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.checkout h1 {
+  margin-bottom: 0.75rem;
+}
+
+.checkout h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.saved-addresses {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.saved-address {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+  text-align: left;
+  font: inherit;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.saved-address:hover {
+  border-color: var(--color-primary);
+}
+
+.payment {
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.payment legend {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  padding: 0 0.25rem;
+}
+
+.payment__option {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.92rem;
+  padding: 0.2rem 0;
+}
+
+.checkout__summary {
+  position: sticky;
+  top: 90px;
+}
+
+.checkout__items {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.checkout__items li {
+  display: grid;
+  grid-template-columns: 44px 1fr auto;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.88rem;
+}
+
+.checkout__thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+}
+
+.checkout__item-name {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+.checkout__bill {
+  display: grid;
+  gap: 0.4rem;
+  border-top: 1px dashed var(--color-border);
+  padding-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
+
+.checkout__bill > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout__bill strong {
+  color: var(--color-text);
+}
+
+.checkout__total {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .checkout {
+    grid-template-columns: 1fr;
+  }
+
+  .checkout__summary {
+    position: static;
+  }
+}

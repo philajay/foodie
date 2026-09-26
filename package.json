@@ -1,0 +1,42 @@
+{
+  "name": "foodie-zomato-clone",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "typecheck": "tsc -b",
+    "emulators": "firebase emulators:start",
+    "seed": "tsx scripts/seed.ts",
+    "seed:force": "tsx scripts/seed.ts --force",
+    "seed:reset": "tsx scripts/seed.ts --reset --force",
+    "deploy": "npm run build && firebase deploy",
+    "deploy:hosting": "npm run build && firebase deploy --only hosting",
+    "deploy:backend": "firebase deploy --only firestore:rules,firestore:indexes,storage",
+    "images": "tsx scripts/fetch-images.ts",
+    "images:force": "tsx scripts/fetch-images.ts --force"
+  },
+  "dependencies": {
+    "firebase": "^12.19.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "firebase-admin": "^14.5.0",
+    "firebase-tools": "^15.31.0",
+    "oxlint": "^1.81.0",
+    "tsx": "^4.23.15",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  },
+  "description": "Zomato-style food delivery clone built with React, TypeScript, Firebase (Firestore, Auth, Storage) and deployed on Firebase Hosting."
+}

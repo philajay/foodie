@@ -1,0 +1,132 @@
+.orders {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.order {
+  background: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 1.1rem 1.25rem;
+}
+
+.order--new {
+  border: 2px solid var(--color-primary);
+}
+
+.order__head {
+  display: grid;
+  grid-template-columns: 56px 1fr auto;
+  gap: 0.9rem;
+  align-items: start;
+}
+
+.order__head h2 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.order__head p {
+  margin: 0.1rem 0 0;
+  font-size: 0.85rem;
+}
+
+.order__thumb {
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+}
+
+.order__amount {
+  display: grid;
+  justify-items: end;
+  gap: 0.35rem;
+  font-size: 1.05rem;
+}
+
+.order__status {
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  background: var(--color-surface-alt);
+  color: var(--color-muted);
+}
+
+.order__status--placed,
+.order__status--preparing {
+  background: #fff3d6;
+  color: #96650a;
+}
+
+.order__status--out_for_delivery {
+  background: var(--color-primary-soft);
+  color: var(--color-primary-dark);
+}
+
+.order__status--delivered {
+  background: #e3f6ea;
+  color: #0f8a4d;
+}
+
+.order__status--cancelled {
+  background: #fdecec;
+  color: var(--color-danger);
+}
+
+.tracker {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  padding: 0;
+  font-size: 0.78rem;
+  text-transform: capitalize;
+  color: var(--color-muted);
+}
+
+.tracker__step {
+  flex: 1;
+  padding: 0.35rem 0.5rem;
+  border-radius: 8px;
+  background: var(--color-surface-alt);
+  text-align: center;
+}
+
+.tracker__step.is-done {
+  background: #e3f6ea;
+  color: #0f8a4d;
+  font-weight: 700;
+}
+
+.order__items {
+  list-style: none;
+  margin: 0 0 0.75rem;
+  padding: 0.75rem 0 0;
+  border-top: 1px dashed var(--color-border);
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.order__items li {
+  display: grid;
+  grid-template-columns: 18px 1fr auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 560px) {
+  .order__head {
+    grid-template-columns: 48px 1fr;
+  }
+
+  .order__amount {
+    grid-column: 1 / -1;
+    justify-items: start;
+  }
+}

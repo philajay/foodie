@@ -1,0 +1,50 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isOwner(uid) {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.admin == true;
+    }
+
+    // Public catalogue: anyone (even signed out) can browse restaurants & menus.
+    match /restaurants/{restaurantId} {
+      allow read: if true;
+      allow write: if isAdmin();
+
+      match /menu/{itemId} {
+        allow read: if true;
+        allow write: if isAdmin();
+      }
+    }
+
+    // Profiles are private: only the owner can read/write their own document.
+    match /users/{uid} {
+      allow read, write: if isOwner(uid);
+    }
+
+    // Orders: the owner can create/read their own. Only admins can update
+    // anything, except a cancellation while the order is still "placed".
+    match /orders/{orderId} {
+      allow create: if isOwner(request.resource.data.userId)
+        && request.resource.data.items is list
+        && request.resource.data.total is number
+        && request.resource.data.status == 'placed';
+      allow read: if isOwner(resource.data.userId) || isAdmin();
+      allow update: if isAdmin()
+        || (isOwner(resource.data.userId)
+            && resource.data.status == 'placed'
+            && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status'])
+            && request.resource.data.status == 'cancelled');
+      allow delete: if isAdmin();
+    }
+  }
+}
