@@ -1,6 +1,6 @@
 .admin {
   min-height: 100vh;
-  background: #f4f5f9;
+  background: var(--color-surface);
 }
 
 .admin__bar {
@@ -93,7 +93,7 @@
 }
 
 .stat {
-  background: #fff;
+  background: var(--color-elevated);
   border-radius: 12px;
   padding: 1rem 1.1rem;
   box-shadow: var(--shadow-sm);
@@ -115,7 +115,7 @@
 .admin-table {
   width: 100%;
   border-collapse: collapse;
-  background: #fff;
+  background: var(--color-elevated);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow-sm);
@@ -131,7 +131,7 @@
 }
 
 .admin-table th {
-  background: #fafbff;
+  background: var(--color-surface-alt);
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -169,7 +169,7 @@
   max-width: 520px;
   margin: 5rem auto;
   text-align: center;
-  background: #fff;
+  background: var(--color-elevated);
   border-radius: 12px;
   padding: 2rem;
   box-shadow: var(--shadow-md);

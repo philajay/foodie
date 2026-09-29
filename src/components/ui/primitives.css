@@ -64,7 +64,7 @@
   padding: 0.85rem 1rem;
   border: 1px solid var(--color-danger);
   border-radius: 10px;
-  background: #fff5f5;
+  background: var(--color-danger-soft);
   color: var(--color-danger);
   font-size: 0.9rem;
 }
@@ -100,11 +100,11 @@
 }
 
 .veg-dot--veg {
-  color: #0f8a4d;
+  color: var(--color-success);
 }
 
 .veg-dot--nonveg {
-  color: #d13b3b;
+  color: var(--color-danger);
 }
 
 .rating-badge {

@@ -7,7 +7,7 @@
 }
 
 .order {
-  background: #fff;
+  background: var(--color-elevated);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   padding: 1.1rem 1.25rem;
@@ -59,22 +59,22 @@
 
 .order__status--placed,
 .order__status--preparing {
-  background: #fff3d6;
-  color: #96650a;
+  background: var(--color-warning-soft);
+  color: var(--color-warning);
 }
 
 .order__status--out_for_delivery {
   background: var(--color-primary-soft);
-  color: var(--color-primary-dark);
+  color: var(--color-primary);
 }
 
 .order__status--delivered {
-  background: #e3f6ea;
-  color: #0f8a4d;
+  background: var(--color-success-soft);
+  color: var(--color-success);
 }
 
 .order__status--cancelled {
-  background: #fdecec;
+  background: var(--color-danger-soft);
   color: var(--color-danger);
 }
 
@@ -98,8 +98,8 @@
 }
 
 .tracker__step.is-done {
-  background: #e3f6ea;
-  color: #0f8a4d;
+  background: var(--color-success-soft);
+  color: var(--color-success);
   font-weight: 700;
 }
 

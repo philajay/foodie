@@ -2,7 +2,7 @@
   position: relative;
   border-radius: var(--radius-md);
   overflow: hidden;
-  background: #fff;
+  background: var(--color-elevated);
   box-shadow: var(--shadow-sm);
   margin-bottom: 1.25rem;
 }
@@ -60,7 +60,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  background: #fff;
+  background: var(--color-elevated);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
 }
@@ -89,7 +89,7 @@
 }
 
 .menu-row__rating {
-  color: #1c8a4d;
+  color: var(--color-success);
   font-size: 0.8rem;
   font-weight: 700;
 }
@@ -128,7 +128,7 @@
 .menu-row__action .stepper {
   position: relative;
   margin-bottom: -0.6rem;
-  background: #fff;
+  background: var(--color-elevated);
 }
 
 .stepper--floating {

@@ -8,7 +8,7 @@
 
 .auth-card {
   width: min(420px, 100%);
-  background: #fff;
+  background: var(--color-elevated);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
   padding: 1.75rem;
@@ -32,7 +32,7 @@
   margin: 0 0 0.75rem;
   padding: 0.6rem 0.75rem;
   border-radius: 8px;
-  background: #fff5f5;
+  background: var(--color-danger-soft);
   border: 1px solid var(--color-danger);
   color: var(--color-danger);
   font-size: 0.85rem;

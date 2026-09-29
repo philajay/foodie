@@ -1,16 +1,32 @@
 :root {
+  color-scheme: dark;
+
+  /* Brand */
   --color-primary: #e23744;
   --color-primary-dark: #c81e2b;
-  --color-primary-soft: #fde8e9;
+  --color-primary-soft: #3a2026;
   --color-accent: #cb202d;
-  --color-danger: #d13b3b;
-  --color-text: #1c1c28;
-  --color-muted: #6b7080;
-  --color-border: #e2e4ec;
-  --color-surface: #f7f7fa;
-  --color-surface-alt: #eceef4;
-  --shadow-sm: 0 1px 3px rgba(20, 22, 34, 0.08);
-  --shadow-md: 0 8px 24px rgba(20, 22, 34, 0.12);
+
+  /* Feedback */
+  --color-danger: #ff6b6b;
+  --color-danger-soft: #3a2024;
+  --color-success: #4ade80;
+  --color-success-soft: #16311f;
+  --color-warning: #f2c76b;
+  --color-warning-soft: #3a3320;
+
+  /* Surfaces (dark) */
+  --color-surface: #0f1017;
+  --color-surface-alt: #252838;
+  --color-elevated: #1a1b24;
+
+  /* Text */
+  --color-text: #eef0f6;
+  --color-muted: #9aa0b4;
+  --color-border: #2c2f3d;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.55);
   --radius-md: 12px;
   --max-width: 1120px;
 }
@@ -61,7 +77,7 @@ a {
 }
 
 .card-surface {
-  background: #fff;
+  background: var(--color-elevated);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   padding: 1.25rem;
