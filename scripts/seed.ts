@@ -183,6 +183,8 @@ async function main() {
         image: result.menuImages[item.id],
         inStock: true,
         ...(item.rating ? { rating: item.rating } : {}),
+        // Demo hardcoded most-sold counts: explicit value wins, else derive from menu order.
+        soldCount: item.soldCount ?? Math.max(50, 500 - menu.indexOf(item) * 80),
       })
     }
 

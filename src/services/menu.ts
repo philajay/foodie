@@ -29,6 +29,7 @@ function mapMenuItem(restaurantId: string, id: string, data: DocumentData): Menu
     image: storagePathToUrl(data.image),
     inStock: data.inStock !== false,
     rating: data.rating ? Number(data.rating) : undefined,
+    soldCount: data.soldCount != null ? Number(data.soldCount) : undefined,
   }
 }
 
@@ -72,6 +73,7 @@ export async function saveMenuItem(restaurantId: string, input: MenuItemInput): 
     image: input.image,
     inStock: input.inStock,
     ...(input.rating ? { rating: input.rating } : {}),
+    ...(input.soldCount != null ? { soldCount: input.soldCount } : {}),
     updatedAt: serverTimestamp(),
   }
   await setDoc(ref, payload)
@@ -93,3 +95,22 @@ export const MENU_CATEGORY_ORDER = [
   'Desserts',
   'Beverages',
 ] as const
+
+/**
+ * Top N most-sold items for demo.
+ * 1. soldCount desc (if any item has soldCount)
+ * 2. fallback: rating desc
+ * 3. fallback: original order (first N)
+ */
+export function getMostSoldItems(items: MenuItem[], count = 3): MenuItem[] {
+  if (items.length === 0) return []
+  const hasSoldCount = items.some((item) => (item.soldCount ?? 0) > 0)
+  const sorted = [...items].sort((a, b) => {
+    if (hasSoldCount) {
+      const diff = (b.soldCount ?? 0) - (a.soldCount ?? 0)
+      if (diff !== 0) return diff
+    }
+    return (b.rating ?? 0) - (a.rating ?? 0)
+  })
+  return sorted.slice(0, count)
+}

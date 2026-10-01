@@ -31,6 +31,8 @@ export interface MenuItem {
   image: string
   inStock: boolean
   rating?: number
+  /** Demo hardcoded field: total times ordered. Higher = more sold. */
+  soldCount?: number
 }
 
 export interface Address {

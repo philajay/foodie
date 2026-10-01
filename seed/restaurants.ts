@@ -9,6 +9,7 @@ export interface SeedMenuItem {
   category: MenuCategory
   emoji: string
   rating?: number
+  soldCount?: number
 }
 
 export interface SeedRestaurant {
@@ -53,6 +54,7 @@ export const SEED_RESTAURANTS: SeedRestaurant[] = [
         category: 'Main Course',
         emoji: '🍛',
         rating: 4.7,
+        soldCount: 1250,
       },
       {
         id: 'paneer-tikka',
@@ -63,6 +65,7 @@ export const SEED_RESTAURANTS: SeedRestaurant[] = [
         category: 'Starters',
         emoji: '🧀',
         rating: 4.5,
+        soldCount: 980,
       },
       {
         id: 'tandoori-platter',
@@ -72,6 +75,7 @@ export const SEED_RESTAURANTS: SeedRestaurant[] = [
         isVeg: false,
         category: 'Starters',
         emoji: '🍢',
+        soldCount: 760,
       },
       {
         id: 'dal-makhani',

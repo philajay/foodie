@@ -1,0 +1,489 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Foodie home" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e6]: 🍔
+        - text: Foodie
+      - search [ref=e7]:
+        - searchbox "Search restaurants" [ref=e8]
+      - navigation "Primary" [ref=e9]:
+        - link "Orders" [ref=e10] [cursor=pointer]:
+          - /url: /orders
+        - link "Log in" [ref=e11] [cursor=pointer]:
+          - /url: /login
+        - link "Admin" [ref=e12] [cursor=pointer]:
+          - /url: /admin
+        - button "Open cart" [ref=e13] [cursor=pointer]:
+          - text: 🛒
+          - generic [ref=e432]: "1"
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Order food you'll love" [level=1] [ref=e20]
+        - paragraph [ref=e21]: 14 restaurants delivering to you
+        - generic "Popular cuisines" [ref=e22]:
+          - button "Biryani" [ref=e23] [cursor=pointer]
+          - button "Pizza" [ref=e24] [cursor=pointer]
+          - button "Burger" [ref=e25] [cursor=pointer]
+          - button "Chinese" [ref=e26] [cursor=pointer]
+          - button "Desserts" [ref=e27] [cursor=pointer]
+      - region "Filters" [ref=e28]:
+        - generic [ref=e29]:
+          - generic [ref=e30]: Sort by
+          - combobox "Sort by" [ref=e31]:
+            - 'option "Rating: high to low" [selected]'
+            - option "Delivery time"
+            - 'option "Cost: low to high"'
+            - 'option "Cost: high to low"'
+        - generic [ref=e32]:
+          - generic [ref=e33]: Max price for two
+          - combobox "Max price for two" [ref=e34]:
+            - option "Any" [selected]
+            - option "Up to ₹300"
+            - option "Up to ₹600"
+            - option "Up to ₹1000"
+        - generic [ref=e35] [cursor=pointer]:
+          - checkbox "Pure veg only" [ref=e36]
+          - generic [ref=e37]: Pure veg only
+      - generic [ref=e38]:
+        - article [ref=e39]:
+          - link "akm Biryani Closed today" [ref=e40] [cursor=pointer]:
+            - /url: /restaurant/eYwRh7yBooC9h7AsBEE2
+            - img "akm Biryani" [ref=e41]
+            - generic [ref=e42]: Closed today
+          - generic [ref=e43]:
+            - heading [level=3] [ref=e45]:
+              - link "akm Biryani" [ref=e46] [cursor=pointer]:
+                - /url: /restaurant/eYwRh7yBooC9h7AsBEE2
+            - paragraph [ref=e47]: VegBiryani
+            - generic [ref=e48]:
+              - generic [ref=e49]: ₹₹
+              - generic [ref=e50]: •
+              - generic [ref=e51]: 30 min
+              - generic [ref=e52]: 4.5 ★
+            - generic [ref=e53]:
+              - paragraph [ref=e54]: Most Sold
+              - list [ref=e55]:
+                - listitem [ref=e56]:
+                  - img "Veg Biryani" [ref=e57]
+                  - generic [ref=e58]:
+                    - generic [ref=e59]:
+                      - generic "Vegetarian" [ref=e60]
+                      - text: Veg Biryani
+                    - generic [ref=e61]: ₹199
+                  - button "Add" [disabled] [ref=e62]
+                - listitem [ref=e63]:
+                  - img [ref=e64]
+                  - generic [ref=e65]:
+                    - generic [ref=e66]:
+                      - generic "Vegetarian" [ref=e67]
+                      - text: "[VOICEOVER TEXT] पुरानी तस्वीर देखते ही राघव की आँखें भर आईं। उसने बताया कि उसकी भी एक बेटी थी, जिसका नाम अनन्या था, लेकिन बरसों पहले उससे दूर हो गई। [00:00–00:04 | A-ROLL DIRECTIVE] Show Raghav holding the old photograph with trembling hands, his eyes filling with tears as he recognizes something deeply familiar. Preserve exact appearance and clothing. Cinematic 3D Pixar-inspired animation, emotional close-up, warm sunset light, subtle facial movement. [00:04–00:10 | B-ROLL DIRECTIVE] Show a soft nostalgic flashback of younger Raghav standing beside a little Indian girl near the same village tea stall. The child resembles young Ananya. Warm dreamy sunlight, gentle emotional atmosphere, cinematic depth, slow camera movement. No narrator or visible talking head. [AUDIO DIRECTIVE & NEGATIVE CONSTRAINT] Clean Hindi voiceover only. ZERO BGM. No narrator visible. No extra dialogue. No subtitles. No text overlays. Flashback must remain visually consistent and emotionally realistic. [EDUCATIONAL CONTEXT & INTENT DECLARATION] Reveal that Raghav once had a daughter named Ananya, creating the central emotional mystery of the story."
+                    - generic [ref=e68]: ₹199
+                  - button "Add" [disabled] [ref=e69]
+                - listitem [ref=e70]:
+                  - img "Non Veg" [ref=e71]
+                  - generic [ref=e72]:
+                    - generic [ref=e73]:
+                      - generic "Non-vegetarian" [ref=e74]
+                      - text: Non Veg
+                    - generic [ref=e75]: ₹250
+                  - button "Add" [disabled] [ref=e76]
+        - article [ref=e77]:
+          - link "Chai & Co. Free cookie with every order Closed today" [ref=e78] [cursor=pointer]:
+            - /url: /restaurant/chai-and-co
+            - img "Chai & Co." [ref=e79]
+            - generic [ref=e80]: Free cookie with every order
+            - generic [ref=e81]: Closed today
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - heading [level=3] [ref=e84]:
+                - link "Chai & Co." [ref=e85] [cursor=pointer]:
+                  - /url: /restaurant/chai-and-co
+              - generic "Vegetarian" [ref=e86]
+            - paragraph [ref=e87]: Café • Desserts • Beverages
+            - generic [ref=e88]:
+              - generic [ref=e89]: ₹
+              - generic [ref=e90]: •
+              - generic [ref=e91]: 18 min
+              - generic [ref=e92]: 4.5 ★ (4410)
+            - generic [ref=e93]:
+              - paragraph [ref=e94]: Most Sold
+              - list [ref=e95]:
+                - listitem [ref=e96]:
+                  - img "South Indian Filter Coffee" [ref=e97]
+                  - generic [ref=e98]:
+                    - generic [ref=e99]:
+                      - generic "Vegetarian" [ref=e100]
+                      - text: South Indian Filter Coffee
+                    - generic [ref=e101]: ₹79
+                  - button "Add" [disabled] [ref=e102]
+                - listitem [ref=e103]:
+                  - img "Cold Brew Coffee" [ref=e104]
+                  - generic [ref=e105]:
+                    - generic [ref=e106]:
+                      - generic "Vegetarian" [ref=e107]
+                      - text: Cold Brew Coffee
+                    - generic [ref=e108]: ₹179
+                  - button "Add" [disabled] [ref=e109]
+                - listitem [ref=e110]:
+                  - img "Butter Croissant" [ref=e111]
+                  - generic [ref=e112]:
+                    - generic [ref=e113]:
+                      - generic "Vegetarian" [ref=e114]
+                      - text: Butter Croissant
+                    - generic [ref=e115]: ₹149
+                  - button "Add" [disabled] [ref=e116]
+        - article [ref=e117]:
+          - link "Biryani Bazaar ₹100 OFF on orders above ₹499" [ref=e118] [cursor=pointer]:
+            - /url: /restaurant/biryani-bazaar
+            - img "Biryani Bazaar" [ref=e119]
+            - generic [ref=e120]: ₹100 OFF on orders above ₹499
+          - generic [ref=e121]:
+            - heading [level=3] [ref=e123]:
+              - link "Biryani Bazaar" [ref=e124] [cursor=pointer]:
+                - /url: /restaurant/biryani-bazaar
+            - paragraph [ref=e125]: Biryani • Hyderabadi • Mughlai
+            - generic [ref=e126]:
+              - generic [ref=e127]: ₹₹
+              - generic [ref=e128]: •
+              - generic [ref=e129]: 35 min
+              - generic [ref=e130]: 4.5 ★ (20455)
+            - generic [ref=e131]:
+              - paragraph [ref=e132]: Most Sold
+              - list [ref=e133]:
+                - listitem [ref=e134]:
+                  - img "Hyderabadi Chicken Biryani" [ref=e135]
+                  - generic [ref=e136]:
+                    - generic [ref=e137]:
+                      - generic "Non-vegetarian" [ref=e138]
+                      - text: Hyderabadi Chicken Biryani
+                    - generic [ref=e139]: ₹329
+                  - generic [ref=e433]:
+                    - button "Decrease" [ref=e434] [cursor=pointer]: −
+                    - generic [ref=e435]: "1"
+                    - button "Increase" [ref=e436] [cursor=pointer]: +
+                - listitem [ref=e141]:
+                  - img "Veg Dum Biryani" [ref=e142]
+                  - generic [ref=e143]:
+                    - generic [ref=e144]:
+                      - generic "Vegetarian" [ref=e145]
+                      - text: Veg Dum Biryani
+                    - generic [ref=e146]: ₹289
+                  - button "Add" [ref=e147] [cursor=pointer]
+                - listitem [ref=e148]:
+                  - img "Double Ka Meetha" [ref=e149]
+                  - generic [ref=e150]:
+                    - generic [ref=e151]:
+                      - generic "Vegetarian" [ref=e152]
+                      - text: Double Ka Meetha
+                    - generic [ref=e153]: ₹149
+                  - button "Add" [ref=e154] [cursor=pointer]
+        - article [ref=e155]:
+          - link [ref=e156] [cursor=pointer]:
+            - /url: /restaurant/Wi6HBfWAoLXnDhgfkH9v
+            - img "tender" [ref=e157]
+          - generic [ref=e158]:
+            - heading [level=3] [ref=e160]:
+              - link "tender" [ref=e161] [cursor=pointer]:
+                - /url: /restaurant/Wi6HBfWAoLXnDhgfkH9v
+            - paragraph [ref=e162]: veg
+            - generic [ref=e163]:
+              - generic [ref=e164]: ₹
+              - generic [ref=e165]: •
+              - generic [ref=e166]: 30 min
+              - generic [ref=e167]: 4.5 ★
+        - article [ref=e168]:
+          - link [ref=e169] [cursor=pointer]:
+            - /url: /restaurant/VvzQYNA5qq1qEMjVS9XQ
+            - img "Apna restaurant" [ref=e170]
+          - generic [ref=e171]:
+            - generic [ref=e172]:
+              - heading [level=3] [ref=e173]:
+                - link "Apna restaurant" [ref=e174] [cursor=pointer]:
+                  - /url: /restaurant/VvzQYNA5qq1qEMjVS9XQ
+              - generic "Vegetarian" [ref=e175]
+            - paragraph [ref=e176]: Fast food
+            - generic [ref=e177]:
+              - generic [ref=e178]: ₹₹
+              - generic [ref=e179]: •
+              - generic [ref=e180]: 30 min
+              - generic [ref=e181]: 4.5 ★
+            - generic [ref=e182]:
+              - paragraph [ref=e183]: Most Sold
+              - list [ref=e184]:
+                - listitem [ref=e185]:
+                  - img "ब्रेड मसाला" [ref=e186]
+                  - generic [ref=e187]:
+                    - generic [ref=e188]:
+                      - generic "Vegetarian" [ref=e189]
+                      - text: ब्रेड मसाला
+                    - generic [ref=e190]: ₹250
+                  - button "Add" [ref=e191] [cursor=pointer]
+                - listitem [ref=e192]:
+                  - img "समोसा" [ref=e193]
+                  - generic [ref=e194]:
+                    - generic [ref=e195]:
+                      - generic "Vegetarian" [ref=e196]
+                      - text: समोसा
+                    - generic [ref=e197]: ₹199
+                  - button "Add" [ref=e198] [cursor=pointer]
+        - article [ref=e199]:
+          - link "Nandita Karan 10% discount for first order" [ref=e200] [cursor=pointer]:
+            - /url: /restaurant/SDhS0qZeYMtKK6BLbcrX
+            - img "Nandita Karan" [ref=e201]
+            - generic [ref=e202]: 10% discount for first order
+          - generic [ref=e203]:
+            - generic [ref=e204]:
+              - heading [level=3] [ref=e205]:
+                - link "Nandita Karan" [ref=e206] [cursor=pointer]:
+                  - /url: /restaurant/SDhS0qZeYMtKK6BLbcrX
+              - generic "Vegetarian" [ref=e207]
+            - paragraph [ref=e208]: superchai
+            - generic [ref=e209]:
+              - generic [ref=e210]: ₹₹
+              - generic [ref=e211]: •
+              - generic [ref=e212]: 30 min
+              - generic [ref=e213]: 4.5 ★
+        - article [ref=e214]:
+          - link "Goi 2%" [ref=e215] [cursor=pointer]:
+            - /url: /restaurant/RrhoIjWPZitptKzLBdFp
+            - img "Goi" [ref=e216]
+            - generic [ref=e217]: 2%
+          - generic [ref=e218]:
+            - generic [ref=e219]:
+              - heading [level=3] [ref=e220]:
+                - link "Goi" [ref=e221] [cursor=pointer]:
+                  - /url: /restaurant/RrhoIjWPZitptKzLBdFp
+              - generic "Vegetarian" [ref=e222]
+            - paragraph [ref=e223]: Biryani
+            - generic [ref=e224]:
+              - generic [ref=e225]: ₹₹
+              - generic [ref=e226]: •
+              - generic [ref=e227]: 30 min
+              - generic [ref=e228]: 4.5 ★
+        - article [ref=e229]:
+          - link [ref=e230] [cursor=pointer]:
+            - /url: /restaurant/GqXwjHBhYHYblipU2MLK
+            - img "Md Md ibran" [ref=e231]
+          - generic [ref=e232]:
+            - heading [level=3] [ref=e234]:
+              - link "Md Md ibran" [ref=e235] [cursor=pointer]:
+                - /url: /restaurant/GqXwjHBhYHYblipU2MLK
+            - paragraph [ref=e236]: Use the edit icon to pin • add or delete clips.
+            - generic [ref=e237]:
+              - generic [ref=e238]: ₹₹
+              - generic [ref=e239]: •
+              - generic [ref=e240]: 30 min
+              - generic [ref=e241]: 4.5 ★
+        - article [ref=e242]:
+          - link "Hetal Patel 20%" [ref=e243] [cursor=pointer]:
+            - /url: /restaurant/BmLoKrdpBQTAFXNGDxe7
+            - img "Hetal Patel" [ref=e244]
+            - generic [ref=e245]: 20%
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - heading [level=3] [ref=e248]:
+                - link "Hetal Patel" [ref=e249] [cursor=pointer]:
+                  - /url: /restaurant/BmLoKrdpBQTAFXNGDxe7
+              - generic "Vegetarian" [ref=e250]
+            - paragraph [ref=e251]: Bhaji
+            - generic [ref=e252]:
+              - generic [ref=e253]: ₹₹
+              - generic [ref=e254]: •
+              - generic [ref=e255]: 30 min
+              - generic [ref=e256]: 4.5 ★
+        - article [ref=e257]:
+          - link [ref=e258] [cursor=pointer]:
+            - /url: /restaurant/1lARtFlv4prDQO8myTZw
+            - img "Jhilmil Dhaba," [ref=e259]
+          - generic [ref=e260]:
+            - heading [level=3] [ref=e262]:
+              - link "Jhilmil Dhaba," [ref=e263] [cursor=pointer]:
+                - /url: /restaurant/1lARtFlv4prDQO8myTZw
+            - paragraph [ref=e264]: Chickenbiryani
+            - generic [ref=e265]:
+              - generic [ref=e266]: ₹₹₹
+              - generic [ref=e267]: •
+              - generic [ref=e268]: 30 min
+              - generic [ref=e269]: 4.5 ★
+            - generic [ref=e270]:
+              - paragraph [ref=e271]: Most Sold
+              - list [ref=e272]:
+                - listitem [ref=e273]:
+                  - img "Pakoda" [ref=e274]
+                  - generic [ref=e275]:
+                    - generic [ref=e276]:
+                      - generic "Vegetarian" [ref=e277]
+                      - text: Pakoda
+                    - generic [ref=e278]: ₹199
+                  - button "Add" [ref=e279] [cursor=pointer]
+        - article [ref=e280]:
+          - link [ref=e281] [cursor=pointer]:
+            - /url: /restaurant/sunday-shabana
+            - img "Sunday Shabana" [ref=e282]
+          - generic [ref=e283]:
+            - heading [level=3] [ref=e285]:
+              - link "Sunday Shabana" [ref=e286] [cursor=pointer]:
+                - /url: /restaurant/sunday-shabana
+            - paragraph [ref=e287]: Mughlai • Awadhi • Kebabs
+            - generic [ref=e288]:
+              - generic [ref=e289]: ₹₹₹
+              - generic [ref=e290]: •
+              - generic [ref=e291]: 40 min
+              - generic [ref=e292]: 4.4 ★ (5220)
+            - generic [ref=e293]:
+              - paragraph [ref=e294]: Most Sold
+              - list [ref=e295]:
+                - listitem [ref=e296]:
+                  - img "Galouti Kebab" [ref=e297]
+                  - generic [ref=e298]:
+                    - generic [ref=e299]:
+                      - generic "Non-vegetarian" [ref=e300]
+                      - text: Galouti Kebab
+                    - generic [ref=e301]: ₹449
+                  - button "Add" [ref=e302] [cursor=pointer]
+                - listitem [ref=e303]:
+                  - img "Shahi Paneer" [ref=e304]
+                  - generic [ref=e305]:
+                    - generic [ref=e306]:
+                      - generic "Vegetarian" [ref=e307]
+                      - text: Shahi Paneer
+                    - generic [ref=e308]: ₹329
+                  - button "Add" [ref=e309] [cursor=pointer]
+                - listitem [ref=e310]:
+                  - img "Murgh Malai Tikka" [ref=e311]
+                  - generic [ref=e312]:
+                    - generic [ref=e313]:
+                      - generic "Non-vegetarian" [ref=e314]
+                      - text: Murgh Malai Tikka
+                    - generic [ref=e315]: ₹389
+                  - button "Add" [ref=e316] [cursor=pointer]
+        - article [ref=e317]:
+          - link "Pizza Palace Buy 1 Get 1 on medium pizzas" [ref=e318] [cursor=pointer]:
+            - /url: /restaurant/pizza-palace
+            - img "Pizza Palace" [ref=e319]
+            - generic [ref=e320]: Buy 1 Get 1 on medium pizzas
+          - generic [ref=e321]:
+            - heading [level=3] [ref=e323]:
+              - link "Pizza Palace" [ref=e324] [cursor=pointer]:
+                - /url: /restaurant/pizza-palace
+            - paragraph [ref=e325]: Pizza • Italian • Pasta
+            - generic [ref=e326]:
+              - generic [ref=e327]: ₹₹
+              - generic [ref=e328]: •
+              - generic [ref=e329]: 28 min
+              - generic [ref=e330]: 4.4 ★ (15230)
+            - generic [ref=e331]:
+              - paragraph [ref=e332]: Most Sold
+              - list [ref=e333]:
+                - listitem [ref=e334]:
+                  - img "Pepperoni Feast" [ref=e335]
+                  - generic [ref=e336]:
+                    - generic [ref=e337]:
+                      - generic "Non-vegetarian" [ref=e338]
+                      - text: Pepperoni Feast
+                    - generic [ref=e339]: ₹449
+                  - button "Add" [ref=e340] [cursor=pointer]
+                - listitem [ref=e341]:
+                  - img "Margherita" [ref=e342]
+                  - generic [ref=e343]:
+                    - generic [ref=e344]:
+                      - generic "Vegetarian" [ref=e345]
+                      - text: Margherita
+                    - generic [ref=e346]: ₹299
+                  - button "Add" [ref=e347] [cursor=pointer]
+                - listitem [ref=e348]:
+                  - img "Tiramisu" [ref=e349]
+                  - generic [ref=e350]:
+                    - generic [ref=e351]:
+                      - generic "Vegetarian" [ref=e352]
+                      - text: Tiramisu
+                    - generic [ref=e353]: ₹249
+                  - button "Add" [ref=e354] [cursor=pointer]
+        - article [ref=e355]:
+          - link "Burger Barn Flat ₹50 OFF above ₹349" [ref=e356] [cursor=pointer]:
+            - /url: /restaurant/burger-barn
+            - img "Burger Barn" [ref=e357]
+            - generic [ref=e358]: Flat ₹50 OFF above ₹349
+          - generic [ref=e359]:
+            - heading [level=3] [ref=e361]:
+              - link "Burger Barn" [ref=e362] [cursor=pointer]:
+                - /url: /restaurant/burger-barn
+            - paragraph [ref=e363]: Burger • American • Street Food
+            - generic [ref=e364]:
+              - generic [ref=e365]: ₹₹
+              - generic [ref=e366]: •
+              - generic [ref=e367]: 24 min
+              - generic [ref=e368]: 4.3 ★ (9912)
+            - generic [ref=e369]:
+              - paragraph [ref=e370]: Most Sold
+              - list [ref=e371]:
+                - listitem [ref=e372]:
+                  - img "Double Cheese Burger" [ref=e373]
+                  - generic [ref=e374]:
+                    - generic [ref=e375]:
+                      - generic "Non-vegetarian" [ref=e376]
+                      - text: Double Cheese Burger
+                    - generic [ref=e377]: ₹299
+                  - button "Add" [ref=e378] [cursor=pointer]
+                - listitem [ref=e379]:
+                  - img "Oreo Thick Shake" [ref=e380]
+                  - generic [ref=e381]:
+                    - generic [ref=e382]:
+                      - generic "Vegetarian" [ref=e383]
+                      - text: Oreo Thick Shake
+                    - generic [ref=e384]: ₹199
+                  - button "Add" [ref=e385] [cursor=pointer]
+                - listitem [ref=e386]:
+                  - img "Crispy Paneer Burger" [ref=e387]
+                  - generic [ref=e388]:
+                    - generic [ref=e389]:
+                      - generic "Vegetarian" [ref=e390]
+                      - text: Crispy Paneer Burger
+                    - generic [ref=e391]: ₹219
+                  - button "Add" [ref=e392] [cursor=pointer]
+        - article [ref=e393]:
+          - link "Green Bowl 20% OFF for first order" [ref=e394] [cursor=pointer]:
+            - /url: /restaurant/green-bowl
+            - img "Green Bowl" [ref=e395]
+            - generic [ref=e396]: 20% OFF for first order
+          - generic [ref=e397]:
+            - generic [ref=e398]:
+              - heading [level=3] [ref=e399]:
+                - link "Green Bowl" [ref=e400] [cursor=pointer]:
+                  - /url: /restaurant/green-bowl
+              - generic "Vegetarian" [ref=e401]
+            - paragraph [ref=e402]: Healthy • Salads • South Indian
+            - generic [ref=e403]:
+              - generic [ref=e404]: ₹₹
+              - generic [ref=e405]: •
+              - generic [ref=e406]: 22 min
+              - generic [ref=e407]: 4.2 ★ (3120)
+            - generic [ref=e408]:
+              - paragraph [ref=e409]: Most Sold
+              - list [ref=e410]:
+                - listitem [ref=e411]:
+                  - img "Quinoa Veggie Bowl" [ref=e412]
+                  - generic [ref=e413]:
+                    - generic [ref=e414]:
+                      - generic "Vegetarian" [ref=e415]
+                      - text: Quinoa Veggie Bowl
+                    - generic [ref=e416]: ₹299
+                  - button "Add" [ref=e417] [cursor=pointer]
+                - listitem [ref=e418]:
+                  - img "Idli Sambar (3 pc)" [ref=e419]
+                  - generic [ref=e420]:
+                    - generic [ref=e421]:
+                      - generic "Vegetarian" [ref=e422]
+                      - text: Idli Sambar (3 pc)
+                    - generic [ref=e423]: ₹129
+                  - button "Add" [ref=e424] [cursor=pointer]
+                - listitem [ref=e425]:
+                  - img "Green Tea" [ref=e426]
+                  - generic [ref=e427]:
+                    - generic [ref=e428]:
+                      - generic "Vegetarian" [ref=e429]
+                      - text: Green Tea
+                    - generic [ref=e430]: ₹79
+                  - button "Add" [ref=e431] [cursor=pointer]
